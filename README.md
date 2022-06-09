@@ -11,9 +11,9 @@ You can click the Preview link to take a look at your changes.
 <a href="https://juncture-digital.org"><img src="https://juncture-digital.org/images/ve-button.png"></a>
 
 <param ve-config 
-       title="Girl with a Pearl Earring"
+       title="Peyotl enters the scene "
        author="JSTOR Labs team"
-       banner="https://iiif.juncture-digital.org/banner/?url=https://upload.wikimedia.org/wikipedia/commons/4/47/Bartholomeus_Johannes_van_Hove%2C_Het_Mauritshuis_te_Den_Haag.jpg" 
+       banner="https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_(5673485954).jpg"
        layout="vertical">
 
 <!-- Entities discussed throughout the essay are typically defined before the essay text and
@@ -34,20 +34,52 @@ This is a sample visual essay demonstrating a few key features of a Visual Essay
 
 ## Image
 
-_Girl with a Pearl Earring_ (Dutch: Meisje met de parel) is an oil painting by Dutch Golden Age painter Johannes Vermeer, 
-dated c. 1665. Going by various names over the centuries, it became known by its present title towards the end of the 
-20th century after the earring worn by the girl portrayed there.[^1]
+Equating  hallucinations with (dark) magic was the beginning of the prohibitive approach applied to these substances during the Colonial period. In his multi-volume ethnographic project, La Historia General de las Cosas de Nueva España / The Universal History of the Things of New Spain, Bernardino de Sahagún wrote on the subject: “Its leaves are slender, cord-like, small. Its name is ololiuhqui. It makes one besotted; it deranges one, troubles one, maddens one, makes one possessed. He who eats it, who drinks it, sees many things which greatly terrify him. He is really frightened [by the] poisonous serpent which he sees for that reason. He who hates people causes on to swallow it in drink [and] food to madden him.”  Ololiuhqui  has been identified as Christmas vine / Morning Glory (Ipomoea corymbosa / Turbina corymbosa, Granziera, 2001).  Images of the plant ornamenting Sahagún’s unique book are among the first sites of visual mediation of psychoactive precursors from the Americas [^1].
 <param ve-image 
-       label="Girl with a Pearl Earring" 
+       label="Peyotl" 
        description="painting by Johannes Vermeer" 
-       license="public domain" 
-       url="https://upload.wikimedia.org/wikipedia/commons/0/0f/1665_Girl_with_a_Pearl_Earring.jpg">
+       license="By Leonora Enking. Public domain" 
+       url="https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_(4876527737).jpg"
+       
 
 ## Map
 
-The work has been in the collection of the Mauritshuis in The Hague since 1902 and has been the subject of various 
-literary treatments. In 2006, the Dutch public selected it as the most beautiful painting in the Netherlands.
-<param ve-map center="Q36600" zoom="11" prefer-geojson>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet GeoJSON Example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+    <style type="text/css">
+        .leaflet-container{background-color:#c5e8ff;}
+    </style>
+</head>
+
+<body>
+    <div id="map" style="width: 600px; height: 400px"></div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+    <script>
+        var myGeoJSONPath = 'path/to/mymap.geo.json';
+        var myCustomStyle = {
+            stroke: false,
+            fill: true,
+            fillColor: '#fff',
+            fillOpacity: 1
+        }
+        $.getJSON(myGeoJSONPath,function(data){
+            var map = L.map('map').setView([39.74739, -105], 4);
+
+            L.geoJson(data, {
+                clickable: false,
+                style: myCustomStyle
+            }).addTo(map);
+        })
+    </script>
+</body>
+</html>
+
 
 ## Multiple viewers
 
@@ -59,4 +91,6 @@ Others are selectable using icons displayed in the top right margin of the parag
 
 # References
 
-[^1]: [Wikipedia: Girl with a Pearl Earring](https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring)
+[^1]: Drawing of ololiuhqui, appears first in  La Historia General de las Cosas de Nueva España, Folio 129, Book X1, Volume 7. 
+Courtesy of World Digital Library.
+
