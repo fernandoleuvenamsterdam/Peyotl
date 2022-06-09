@@ -14,7 +14,8 @@ You can click the Preview link to take a look at your changes.
        title="Peyotl enters the scene "
        author="JSTOR Labs team"
        banner="https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_(5673485954).jpg"
-       layout="vertical"
+       layout="vertical">
+
 
 # Basic usage
 
