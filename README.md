@@ -25,7 +25,8 @@ Equating  hallucinations with (dark) magic was the beginning of the prohibitive 
        label="Peyotl" 
        description="painting by Johannes Vermeer" 
        license="By Leonora Enking. Public domain" 
-       url="https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_(4876527737).jpg"
+       url=<"https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_(4876527737).jpg">
+
        
 
 ## Map
